@@ -1,0 +1,65 @@
+name: moberas_dashboard
+description: Moberas admin dashboard.
+
+version: 1.0.2
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  stacked: ^1.7.6
+  stacked_hooks: 0.1.3
+
+  # navigation
+  get: ^3.4.6
+  auto_route: ^0.6.9
+  stacked_services: ^0.5.2
+  rxdart: ^0.24.1
+
+  # inversion of control
+  get_it: ^4.0.4
+  injectable: ^1.0.5
+  flutter_hooks: ^0.12.0
+  observable_ish: ^2.1.4
+  geolocator: ^6.1.13
+
+  # firebase INI
+  cloud_functions: ^0.5.0
+  cloud_firestore: ^0.13.7
+  firebase_core: ^0.4.5
+  firebase_auth: ^0.16.1
+  firebase_storage: ^3.1.6
+
+  google_fonts: ^1.1.0
+  intl: ^0.16.1
+  cached_network_image: ^2.2.0+1
+  logging: ^0.11.4
+  json_annotation: ^3.0.1
+  mask_text_input_formatter: ^1.0.6
+  flutter_datetime_picker: ^1.3.8
+  cpf_cnpj_validator: ^1.0.5
+  string_validator: ^0.1.4
+  flutter_colorpicker: ^0.3.4
+  flutter_form_builder: ^3.14.0
+  sticky_headers: ^0.1.8+1
+  fl_chart: ^0.12.1
+  charts_flutter: ^0.9.0
+  flutter_map: ^0.10.1+1
+
+dev_dependencies:
+  mockito: ^4.1.1
+  build_runner: ^1.10.3
+  auto_route_generator: ^0.6.10
+  injectable_generator: ^1.0.6
+  json_serializable: ^3.5.0
+  logger: ^0.9.1
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+
+scripts:
+  buildRunner: flutter pub run build_runner build --delete-conflicting-outputs
